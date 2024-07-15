@@ -123,13 +123,6 @@ def game_start():
         device.shell('input tap 641 644')
         time.sleep(15)
 
-def system_fail():
-    pixel_red = screencap(938, 510)
-    if 34 < pixel_red < 38:
-        device_sleep()
-        open_app()
-        pass
-
 ############################# ADVERTS #############################
 # def watch_ads():
 #     print('Checking if there are ads to watch...')
@@ -207,7 +200,6 @@ def system_fail():
 
 while True:
     open_app()
-    # system_fail()
     game_start()
     skip_ads() # Initial Adverts
         
